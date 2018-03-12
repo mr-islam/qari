@@ -1,39 +1,53 @@
 /* solarized theme colors */
 :root {
---base03:    #002b36;
---base02:    #073642;
---base01:    #586e75;
---base00:    #657b83;
---base0:     #839496;
---base1:     #93a1a1;
---base2:     #eee8d5;
---base3:     #fdf6e3;
---yellow:    #b58900;
---orange:    #cb4b16;
---red:       #dc322f;
---magenta:   #d33682;
---violet:    #6c71c4;
---blue:      #268bd2;
---cyan:      #2aa198;
---green:     #859900;
+	--base03:    #002b36;
+	--base02:    #073642;
+	--base01:    #586e75;
+	--base00:    #657b83;
+	--base0:     #839496;
+	--base1:     #93a1a1;
+	--base2:     #eee8d5;
+	--base3:     #fdf6e3;
+	--yellow:    #b58900;
+	--orange:    #cb4b16;
+	--red:       #dc322f;
+	--magenta:   #d33682;
+	--violet:    #6c71c4;
+	--blue:      #268bd2;
+	--cyan:      #2aa198;
+	--green:     #859900;
 }
 body {
 	margin: 0;
 	background-color: var(--base3); 
+	height: 100%;
 }
 .wrapper {
-	display: grid; 
-	grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 25% 50% 25%;
+	width: 100vw;
+	height: 100vh;
+  	display: grid; 
+	grid-template-columns: 0.1fr 0.8fr 0.1fr;
+    grid-template-rows: 0.01fr 0.95fr 0.05fr;
 }
-/*.top-bar {
-	grid-column: 1 / 4;
+.topBar {
+	grid-column: 1/4;
+	grid-row: 1/2;
 	background-color: var(--yellow);
-	height: 5px;
-}*/
-.title {
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-	justify-self: center;
-	font-family: 'Amiri';
+}
+.main {
+	grid-column: 2/3;
+	grid-row: 2/3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #eee8d5;
+}
+.footer {
+	grid-column: 1/4;
+	grid-row: 3/4;
+	background-color: var(--blue);
+	/*display: flex;
+	flex-direction: row;
+	justify-content: space-between;*/
 }

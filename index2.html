@@ -7,21 +7,26 @@
 </head>
 <body>
 <div class="wrapper">
-	<div class="topBarDiv">1</div>
-	<div class="titleDiv">
-		<p>QARI</p>
+	<div class="topBar"></div>
+	<div class="main">
+		<div class="titleDiv">
+			<p>QARI</p>
+		</div>
+		<div id="textDiv">
+			<textarea id="message" cols="50"></textarea>
+		</div>
+		<div id="buttonDiv">
+			<input type="submit" onclick="showMessage(); hideInput()" value="Enter" id="button"/>
+		</div>
 	</div>
-	<div id="textDiv">
-		<textarea id="message" cols="50"></textarea>
-	</div>
-	<div id="buttonDiv">
-		<input type="submit" onclick="showMessage(); hideInput()" value="Enter" id="button"/>
-	</div>
-	<div id="footerDiv">
-	</div>
-	<div id="aboutDiv">
-	</div>
-	<div id="optionDiv">
+	<div id="footer">
+		<div id="aboutDiv">
+			about
+		</div>
+		<div id="optionDiv">
+			options
+		</div>
 	</div>
 </div>
+	
 </body>
