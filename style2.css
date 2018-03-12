@@ -19,20 +19,21 @@
 }
 body {
 	margin: 0;
+	background-color: var(--base3); 
 }
 .wrapper {
 	display: grid; 
 	grid-template-columns: 20% 60% 20%;
-    grid-template-rows: 10% 80% 10%;
-	background-color: var(--base3); 
+    grid-template-rows: 25% 50% 25%;
 }
-.top-bar {
+/*.top-bar {
 	grid-column: 1 / 4;
 	background-color: var(--yellow);
 	height: 5px;
-}
+}*/
 .title {
 	grid-column: 2 / 3;
+	grid-row: 2 / 3;
 	justify-self: center;
 	font-family: 'Amiri';
 }
