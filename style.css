@@ -27,37 +27,32 @@ body {
 	height: 100vh;
   	display: grid; 
 	grid-template-columns: 0.1fr 0.8fr 0.1fr;
-    grid-template-rows: 0.01fr 0.95fr 0.05fr;
+    grid-template-rows: 0.1fr 0.8fr 0.1fr;
     grid-template-areas: 
     "topBar topBar topBar"
-    "main main main"
-    "footer footer footer";
+    "...... main ......"
+    "aboutDiv ... optionsDiv";
+    min-width: 0;
 }
 .topBar {
-	/*grid-column: 1/4;
-	grid-row: 1/2;*/
 	background-color: var(--yellow);
 	grid-area: topBar;
 }
 .main {
 	grid-area: main;
-	/*grid-column: 2/3;
-	grid-row: 2/3;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #eee8d5;
-}
-.footer {
-	/*grid-column: 1/4;
-	grid-row: 3/4;*/
-	grid-area: footer;
-	background-color: var(--blue);
-	/*display: flex;
-	flex-direction: row;
-	justify-content: space-between;*/
+	min-width: 0;
 }
 textarea {
 	resize: vertical;
+	background-color: var(--base2);
+}
+.aboutDiv {
+	grid-area: aboutDiv;
+}
+.optionsDiv {
+	grid-area: optionsDiv;
 }
