@@ -56,3 +56,6 @@ textarea {
 .optionsDiv {
 	grid-area: optionsDiv;
 }
+p {
+	font-family: 'Amiri';
+}
