@@ -31,7 +31,7 @@ body {
     grid-template-areas: 
     "topBar topBar topBar"
     "...... main ......"
-    "aboutDiv ... optionsDiv";
+    "... ... ...";
     min-width: 0;
 }
 .topBar {
@@ -54,12 +54,6 @@ textarea {
     padding: 7px;
  	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
  	margin-bottom: 10px;
-}
-.aboutDiv {
-	grid-area: aboutDiv;
-}
-.optionsDiv {
-	grid-area: optionsDiv;
 }
 p, h1 {
 	font-family: 'Amiri';
