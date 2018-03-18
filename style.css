@@ -49,6 +49,11 @@ body {
 textarea {
 	resize: vertical;
 	background-color: var(--base2);
+	border: none;
+    outline: none;
+    padding: 7px;
+ 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ 	margin-bottom: 10px;
 }
 .aboutDiv {
 	grid-area: aboutDiv;
@@ -56,6 +61,6 @@ textarea {
 .optionsDiv {
 	grid-area: optionsDiv;
 }
-p {
+p, h1 {
 	font-family: 'Amiri';
 }
