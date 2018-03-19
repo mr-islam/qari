@@ -46,7 +46,7 @@ body {
 textarea, .button {
 	padding: 7px;
  	border-radius: 5px;
- 	box-shadow: 0 4px 8px 0 var(--base1);
+box-shadow: 0 1px 3px var(--base1), 0 1px 2px var(--base1);
 	background: var(--base2); 
 	border: none;
     outline: none;
