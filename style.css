@@ -32,7 +32,6 @@ body {
 }
 .topBar {
 	grid-area: 1 / 1 / 2 / 4;
-	background-color: var(--yellow);
 	height: 5px;
 }
 .main {
@@ -46,7 +45,7 @@ body {
 textarea, .button {
 	padding: 7px;
  	border-radius: 5px;
-box-shadow: 0 1px 3px var(--base1), 0 1px 2px var(--base1);
+	box-shadow: 0 1px 3px var(--base1), 0 1px 2px var(--base1);
 	background: var(--base2); 
 	border: none;
     outline: none;
