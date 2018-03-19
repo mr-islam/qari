@@ -43,7 +43,7 @@ body {
 	align-items: center;
 	min-width: 0;
 }
-textarea, #button {
+textarea, .button {
 	padding: 7px;
  	border-radius: 5px;
  	box-shadow: 0 4px 8px 0 var(--base1);
@@ -57,7 +57,7 @@ textarea {
  	margin-bottom: 15px;
  	font-size: 1.3em;
 }
-#button {
+.button {
 }
 p, h1 {
 	font-family: 'Amiri';
