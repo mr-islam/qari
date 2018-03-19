@@ -49,8 +49,11 @@ function hideInput() {
     button.style.display = 'none';
     var message = document.getElementById('message');
     message.style.display = 'none';
+    var bar = document.getElementsByClassName('topBar')[0];
+    bar.style['grid-area']='2 / 2 / 3 / 3';
+    bar.style['align-self']='start';
     var main = document.getElementsByClassName('main')[0];
-    main.style['grid-area']='1 / 2 / 2 / 3'
+    main.style['grid-area']='1 / 2 / 2 / 3';
 }
 //both for no scroll-bar, auto expanding height of textarea
 var textareaVar = document.getElementsByTagName('textarea');
