@@ -1,7 +1,7 @@
 //adds flair to the application, especially for repeat users
 function colorize() {
     var h1 = document.getElementsByTagName('h1')[0];
-    var topBar = document.getElementsByClassName('topBar')[0];
+    var topBar = document.getElementById('topBar');
     var randomNum = Math.floor((Math.random()*8)+1);
     switch (randomNum) {
         case 1:
@@ -49,7 +49,7 @@ function hideInput() {
     button.style.display = 'none';
     var message = document.getElementById('message');
     message.style.display = 'none';
-    var bar = document.getElementsByClassName('topBar')[0];
+    var bar = document.getElementById('topBar');
     bar.style['grid-area']='2 / 2 / 3 / 3';
     bar.style['align-self']='start';
     var main = document.getElementsByClassName('main')[0];

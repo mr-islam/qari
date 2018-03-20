@@ -30,7 +30,7 @@ body {
     grid-template-rows: 0.1fr 0.8fr 0.1fr;
     min-width: 0;
 }
-.topBar {
+#topBar {
 	grid-area: 1 / 1 / 2 / 4;
 	height: 2px;
 }
