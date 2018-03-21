@@ -32,7 +32,7 @@ body {
 }
 #topBar {
 	grid-area: 1 / 1 / 2 / 4;
-	height: 2px;
+	height: 3px;
 }
 .main {
 	grid-area: 2 / 2 / 3 / 3;
@@ -53,18 +53,20 @@ textarea, .button {
 }
 textarea {
 	resize: vertical;
- 	margin-bottom: 15px;
+ 	margin-bottom: 12px;
+	margin-top: 5px;
  	font-size: 1.3em;
 }
 .button {
 }
 p, h1 {
-	font-family: 'Amiri';
+	font-family: 'Amiri', serif;
 }
 h1 {
 	color: var(--base01);
 	font-size: 3em;
 	margin: 0;
+	padding: 0;
 }
 p {
 	font-size: 2.5em;
