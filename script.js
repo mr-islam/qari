@@ -1,4 +1,3 @@
-//adds flair to the application, especially for repeat users
 function colorize() {
     var h1 = document.getElementsByTagName('h1')[0];
     var topBar = document.getElementById('topBar');
@@ -37,25 +36,22 @@ function colorize() {
             topBar.style['background-color'] = 'var(--green)';
     }
 }
-
-//takes textarea content, displays it
 function showMessage() {
     var message = document.getElementById("message").value;
     document.getElementById("display-message").innerHTML = message;
 }
-//hide unnecessary elements when reading WIP
 function hideInput() {
     var button = document.getElementById('buttonInput');
-    button.style.display = 'none';
+        button.style.display = 'none';
     var message = document.getElementById('message');
-    message.style.display = 'none';
+        message.style.display = 'none';
     var bar = document.getElementById('topBar');
-    bar.style['grid-area']='2 / 2 / 3 / 3';
-    bar.style['align-self']='start';
+        bar.style['grid-area']='2 / 2 / 3 / 3';
+        bar.style['align-self']='start';
     var main = document.getElementsByClassName('main')[0];
-    main.style['grid-area']='1 / 2 / 2 / 3';
+        main.style['grid-area']='1 / 2 / 2 / 3';
 }
-//both for no scroll-bar, auto expanding height of textarea
+//for no scroll-bar, auto expanding height of textarea
 var textareaVar = document.getElementsByTagName('textarea');
 for (var i = 0; i < textareaVar.length; i++) {
     textareaVar[i].setAttribute('style', 'height:' + (textareaVar[i].scrollHeight) + 'px;overflow-y:hidden;');
