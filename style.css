@@ -45,7 +45,6 @@ body {
 textarea, .button {
 	padding: 7px;
  	border-radius: 5px;
-	box-shadow: 0 1px 3px var(--base1), 0 1px 2px var(--base1);
 	background: var(--base2); 
 	border: none;
     outline: none;
@@ -54,10 +53,12 @@ textarea, .button {
 textarea {
 	resize: vertical;
  	margin-bottom: 12px;
-	margin-top: 5px;
+	margin-top: 12px;
  	font-size: 1.3em;
 }
-.button {
+textarea:focus, .button:hover {
+	box-shadow: 0 1px 3px var(--base1), 0 1px 2px var(--base2);
+	transition-duration: 0.3s;
 }
 p, h1 {
 	font-family: 'Amiri', serif;
@@ -67,6 +68,7 @@ h1 {
 	font-size: 3em;
 	margin: 0;
 	padding: 0;
+	border: 0;
 }
 p {
 	font-size: 2.5em;
