@@ -46,11 +46,16 @@ function hideInput() {
     var message = document.getElementById('message');
         message.style.display = 'none';
     var bar = document.getElementById('topBar');
-        bar.style['grid-area']='2 / 2 / 3 / 3';
-        bar.style['align-self']='start';
+        bar.style['grid-area'] = '3 / 2 / 4 / 3';
+        bar.style['align-self'] = 'start';
     var main = document.getElementsByClassName('main')[0];
-        main.style['grid-area']='1 / 2 / 2 / 3';
+        main.style['grid-area'] = '1 / 2 / 2 / 3';
+    var contentMove = document.getElementById('user-output');
+    var contentReceive = document.getElementsByClassName('center')[0];
+        contentReceive.appendChild(contentMove);
+        contentReceive.style['grid-area'] = '2 / 2 / 3 / 3';
 }
+
 //for no scroll-bar, auto expanding height of textarea
 var textareaVar = document.getElementsByTagName('textarea');
 for (var i = 0; i < textareaVar.length; i++) {
