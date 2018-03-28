@@ -81,10 +81,14 @@ btn.onclick = function() {
 span.onclick = function() {
     modal.style.display = "none";
 }
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+// switch theme
+var darkCSS = document.getElementById("darkCSS");
+var lightCSS = document.getElementById("lightCSS");
+function darkMode() {
+    darkCSS.media = '';
+    lightCSS.media = 'none';
+}
+function lightMode() {
+    darkCSS.media = 'none';
+    lightCSS.media = '';
 }
