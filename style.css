@@ -26,6 +26,10 @@ body {
 	align-self: center;
 	text-align: center;
 }
+#message {
+	font-size: 18px;
+	text-align: center;
+}
 textarea, .button {
 	padding: 7px;
  	border-radius: 5px;
