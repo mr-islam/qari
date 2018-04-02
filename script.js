@@ -81,10 +81,15 @@ var span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
     modal.style.display = "block";
 }
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
 // switch theme
 var darkCSS = document.getElementById("darkCSS");
@@ -96,4 +101,10 @@ function darkMode() {
 function lightMode() {
     darkCSS.media = 'none';
     lightCSS.media = '';
+}
+// adjust font size
+function resizeText(multiplier) {
+    var elem = document.getElementById("user-output");
+    var currentSize = elem.style.fontSize || 2.5;
+    elem.style.fontSize = (parseFloat(currentSize) + (multiplier * 0.2)) + "em";
 }

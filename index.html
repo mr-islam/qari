@@ -40,12 +40,19 @@
       				<h2>Options</h2>
     			</div>
     			<div class="modal-body">
-      				<p>Theme </p>
-      				<input type="button" class="button2" value="Dark" onclick="darkMode();" />
-      				<input type="button" class="button2" value="Light" onclick="lightMode();" />
-    			</div>
-    			<div class="modal-footer">
-      				<h3>Modal Footer</h3>
+    				<div class="container-flex">
+    					<div class="themeOptions">
+      						<p>Theme: </p>
+      						<input type="button" class="button2" value="Dark" onclick="darkMode();" />
+      						<input type="button" class="button2" value="Light" onclick="lightMode();" />
+      					</div>
+      					<div class="fontSizeOptions">
+      						<p>Font size: </p>
+							<input type="button" class="button2" value="&nbsp;+&nbsp;" onclick="resizeText(1)" />
+							<input type="button" class="button2" value="&nbsp;-&nbsp;" onclick="resizeText(-1)" />
+      					</div>
+      					<div class="fontFamilyOptions"></div>
+      				</div>
     			</div>
   			</div>
 		</div> 

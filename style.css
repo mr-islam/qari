@@ -88,13 +88,17 @@ p {
     position: fixed;
     bottom: 0;
     background-color: #fefefe;
-    width: 100%;
+    width: 28%;
+    height: 50%;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
     animation-duration: 0.4s
 }
-
+.themeOptions, .fontSizeOptions, .fontFamilyOptions {
+	display: flex;
+	flex-direction: row;
+}
 /* The Close Button */
 .close {
     color: white;
