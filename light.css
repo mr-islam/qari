@@ -21,22 +21,37 @@
 body {
 	background-color: var(--base3);
 }
-textarea, .button, p {
- 	color: var(--base00);
-}
 .button2 {
 	border: none;
 	background-color: var(--base3);
 	border-radius: 8px;
 	padding: 7px;
     outline: none;
-    color: var(--01)
+    color: var(--base01);
 }
 h1 {
 	color: var(--base01);
 }
-textarea, .button {
+textarea {
+ 	color: var(--base00);
     background-color: var(--base2);
+}
+.button {
+ 	color: var(--base00);
+    background-color: var(--base2);
+}
+.button3 {
+	background-color: var(--base3);
+	color: var(--base1);
+	border: none;
+	outline: none;
+}
+.button3:hover,
+.button3:focus {
+	color: var(--base01);
+}
+p {
+ 	color: var(--base00);
 }
 .modal-content {
 	box-shadow: 0 1px 3px var(--base1), 0 1px 2px var(--base2);
@@ -47,4 +62,11 @@ textarea, .button {
 	color: var(--base01);
 	border-color: var(--base2);
 	border-bottom: 2px;
+}
+.close {
+    color: var(--base00);
+}
+.close:hover,
+.close:focus {
+    color: var(--base01);
 }

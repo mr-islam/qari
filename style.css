@@ -30,7 +30,7 @@ body {
 	font-size: 18px;
 	text-align: center;
 }
-textarea, .button {
+.button {
 	padding: 7px;
  	border-radius: 5px;
 	border: none;
@@ -41,12 +41,17 @@ textarea {
  	margin-bottom: 12px;
 	margin-top: 12px;
  	font-size: 1.3em;
+	padding: 7px;
+ 	border-radius: 5px;
+	border: none;
+    outline: none;
 }
-textarea:focus, .button:hover {
+textarea:focus, 
+.button:hover {
 	box-shadow: 0 1px 3px var(--base1), 0 1px 2px var(--base2);
 	transition-duration: 0.3s;
 }
-p, h1 {
+p {
 	font-family: 'Amiri', serif;
 }
 h1 {
@@ -55,6 +60,7 @@ h1 {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	font-family: 'Amiri', serif;
 }
 .arabic-text {
 	font-size: 2.5em;
@@ -62,8 +68,12 @@ h1 {
 }
 .options {
 	grid-area: 3 / 1 / 4 / 2;
-	justify-content: end;
+	align-self: end;
 }
+.button3 {
+	font-size: 48px;
+}
+
 
 /* modal stuff*/
 
@@ -95,13 +105,8 @@ h1 {
     animation-name: slideIn;
     animation-duration: 0.4s
 }
-.themeOptions, .fontSizeOptions, .fontFamilyOptions {
-	display: flex;
-	flex-direction: row;
-}
 /* The Close Button */
 .close {
-    color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -128,9 +133,13 @@ h1 {
 }
 .themeOptions {
 	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
 }
 .fontSizeOptions {
 	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
 }
 
 /* Add Animation */
