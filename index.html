@@ -5,8 +5,8 @@
 <head>
     <title>QARI — Arabic Reader</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" media='none' href="light.css" id="lightCSS">
-	<link rel="stylesheet" type="text/css" media='' href="dark.css" id="darkCSS">
+	<link rel="stylesheet" type="text/css" media='' href="light.css" id="lightCSS">
+	<link rel="stylesheet" type="text/css" media='none' href="dark.css" id="darkCSS">
     <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
 </head>
 <body onload="colorize();">
@@ -23,7 +23,7 @@
 			<input type="submit" onclick="showMessage(); hideInput()" value="Read" id="buttonInput" class="button"/>
 		</div>
 		<div>
-			<p id="user-output"><span id="display-message"></span></p>
+			<p id="user-output"><span id="display-message" class="arabic-text"></span></p>
 		</div>
 	</div>
 	<div class="center">
@@ -43,13 +43,17 @@
     				<div class="container-flex">
     					<div class="themeOptions">
       						<p>Theme: </p>
-      						<input type="button" class="button2" value="Dark" onclick="darkMode();" />
-      						<input type="button" class="button2" value="Light" onclick="lightMode();" />
+      						<div>
+	      						<input type="button" class="button2" value="Dark" onclick="darkMode();" />
+    	  						<input type="button" class="button2" value="Light" onclick="lightMode();" />
+    	  					</div>
       					</div>
       					<div class="fontSizeOptions">
       						<p>Font size: </p>
-							<input type="button" class="button2" value="&nbsp;+&nbsp;" onclick="resizeText(1)" />
-							<input type="button" class="button2" value="&nbsp;-&nbsp;" onclick="resizeText(-1)" />
+      						<div>
+								<input type="button" class="button2" value="&nbsp;+&nbsp;" onclick="resizeText(1)" />
+								<input type="button" class="button2" value="&nbsp;-&nbsp;" onclick="resizeText(-1)" />
+							</div>
       					</div>
       					<div class="fontFamilyOptions"></div>
       				</div>
