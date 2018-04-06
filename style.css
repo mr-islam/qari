@@ -36,6 +36,9 @@ body {
 	border: none;
     outline: none;
 }
+.button3 {
+	font-size: 48px;
+}
 textarea {
 	resize: vertical;
  	margin-bottom: 12px;
@@ -70,13 +73,8 @@ h1 {
 	grid-area: 3 / 1 / 4 / 2;
 	align-self: end;
 }
-.button3 {
-	font-size: 48px;
-}
-
 
 /* modal stuff*/
-
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -111,7 +109,6 @@ h1 {
     font-size: 28px;
     font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
     color: #000;
@@ -124,12 +121,8 @@ h1 {
     color: white;
 }
 
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
+.modal-body {
+	padding: 2px 16px;
 }
 .themeOptions {
 	justify-content: space-between;
@@ -137,6 +130,11 @@ h1 {
 	flex-direction: row;
 }
 .fontSizeOptions {
+	justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+}
+.fontFamilyOptions {
 	justify-content: space-between;
 	display: flex;
 	flex-direction: row;

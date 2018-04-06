@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" media='' href="light.css" id="lightCSS">
 	<link rel="stylesheet" type="text/css" media='none' href="dark.css" id="darkCSS">
-    <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amiri|Aref+Ruqaa|Scheherazade" rel="stylesheet">
 </head>
 <body onload="colorize();">
 <div class="wrapper">
@@ -55,7 +55,14 @@
 								<input type="button" class="button2" value="&nbsp;-&nbsp;" onclick="resizeText(-1)" />
 							</div>
       					</div>
-      					<div class="fontFamilyOptions"></div>
+      					<div class="fontFamilyOptions">
+      						<p>Font style: </p>
+      						<select id="input-font" class="input" onchange="changeFont(this)">
+      							<option value="Amiri" selected="selected">Amiri</option>
+      							<option value="Scheherazade">Scheherazade</option>
+      							<option value="Aref Ruqaa">Aref Ruqaa</option>
+							</select>
+      					</div>
       				</div>
     			</div>
   			</div>

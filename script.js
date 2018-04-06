@@ -104,7 +104,10 @@ function lightMode() {
 }
 // adjust font size
 function resizeText(multiplier) {
-    var elem = document.getElementById("user-output");
+    var elem = document.getElementById("display-message");
     var currentSize = elem.style.fontSize || 2.5;
     elem.style.fontSize = (parseFloat(currentSize) + (multiplier * 0.2)) + "em";
+}
+function changeFont(font) {
+        document.getElementById("display-message").style.fontFamily = font.value;
 }
